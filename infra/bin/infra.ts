@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import * as cdk from "aws-cdk-lib";
 import "source-map-support/register";
-import { WebAppStack } from "../lib/InfraStack";
+import { WebAppStack } from "../lib/WebAppStack";
 
 const app = new cdk.App();
 
