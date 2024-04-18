@@ -1,0 +1,14 @@
+{
+  "hosted-zone:account=657984034219:domainName=inflow-it.com:region=us-east-1": {
+    "Id": "/hostedzone/Z06876091172GHSLNL5RN",
+    "Name": "inflow-it.com."
+  },
+  "availability-zones:account=657984034219:region=us-east-1": [
+    "us-east-1a",
+    "us-east-1b",
+    "us-east-1c",
+    "us-east-1d",
+    "us-east-1e",
+    "us-east-1f"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "name": "src",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "local": "tsx index.ts",
+    "build": "tsc -p tsconfig.json",
+    "start": "node index.js",
+    "bundle": "node esbuild.config.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fastify": "^4.26.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.5",
+    "esbuild": "^0.20.2",
+    "esbuild-plugin-tsc": "^0.4.0",
+    "glob": "^10.3.12",
+    "tsx": "^4.7.2",
+    "typescript": "^5.4.4"
+  }
+}
