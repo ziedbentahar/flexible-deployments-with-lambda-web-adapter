@@ -8,7 +8,11 @@ export class WebAppStack extends Stack {
   constructor(scope: Construct, id: string, props?: StackProps) {
     super(scope, id, props);
 
-    const hostedZoneDomainName = "inflow-it.com";
+
+    const hostedZoneDomainName = this.node.tryGetContext(
+      "hostedZoneDomainName"
+    );
+    
     const appName = `awesome-web-app`;
     const domainName = `${appName}.${hostedZoneDomainName}`;
 
