@@ -12,6 +12,10 @@ export class WebAppStack extends Stack {
     const hostedZoneDomainName = this.node.tryGetContext(
       "hostedZoneDomainName"
     );
+
+     const deployOn = this.node.tryGetContext(
+      "deployOn"
+    );
     
     const appName = `awesome-web-app`;
     const domainName = `${appName}.${hostedZoneDomainName}`;
@@ -22,7 +26,7 @@ export class WebAppStack extends Stack {
       hostedZoneDomainName,
       region: this.region,
 
-      deployOn: "ECSFargate",
+      deployOn,
 
       webAppOnLambdaDefinition: () => {
         const { api } = new WebAppOnLambda(this, "web-app-on-lambda", {
